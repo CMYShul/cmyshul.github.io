@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congregation Minchas Yehuda - Brooklyn, NY</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #1a3c6e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            border-radius: 5px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .address {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #1a3c6e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0f2a50;
+        }
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1a3c6e;
+            color: white;
+            margin-top: 2rem;
+        }
+        .success-message {
+            display: none;
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Congregation Minchas Yehuda</h1>
+            <p>Serving the Community Since 1985</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>About Our Congregation</h2>
+            <p class="address"><strong>Address:</strong> 1266 50th Street, Brooklyn, NY 11205</p>
+            <p>Welcome to Congregation Minchas Yehuda, a center for spiritual growth, community service, and Jewish education in Brooklyn. Our congregation is dedicated to fostering a warm and inclusive environment where individuals and families can connect with Jewish tradition and values.</p>
+            <p>We offer regular prayer services, Torah study classes, youth programs, and a variety of community events throughout the year. Our mission is to promote Jewish education, observance, and community spirit.</p>
+        </section>
+
+        <section class="section">
+            <h2>Services & Schedule</h2>
+            <p>We offer a variety of religious services and educational programs throughout the week:</p>
+            <ul>
+                <li><strong>Daily Services:</strong> Morning (Shacharis), Afternoon (Mincha), and Evening (Maariv)</li>
+                <li><strong>Shabbat Services:</strong> Friday evening and Saturday morning</li>
+                <li><strong>Torah Study:</strong> Weekly classes for all ages and knowledge levels</li>
+                <li><strong>Youth Programs:</strong> Educational activities for children and teenagers</li>
+                <li><strong>Community Events:</strong> Holiday celebrations, social gatherings, and special events</li>
+            </ul>
+            <p>Please contact us for the current schedule of services and programs.</p>
+        </section>
+
+        <section class="section">
+            <h2>Sign Up for Text Notifications</h2>
+            <p>Stay informed about our congregation's events, schedule changes, and important announcements by subscribing to our text notification service.</p>
+            
+            <form id="textSignupForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (optional):</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        I consent to receive text messages from Congregation Minchas Yehuda.
+                    </label>
+                </div>
+                
+                <div class="disclaimer">
+                    <p><strong>Text Message Terms and Conditions:</strong></p>
+                    <p>By signing up, you agree to receive recurring automated text messages from Congregation Minchas Yehuda at the phone number provided. Message frequency may vary. Standard message and data rates may apply.</p>
+                    <p>Your consent is not a condition for any purchase. You can unsubscribe at any time by texting STOP to the number from which you receive the messages. Text HELP for assistance.</p>
+                    <p>We value your privacy. Your contact information will be used solely for the purpose of sending congregation-related communications and will not be shared with third parties for marketing purposes.</p>
+                </div>
+                
+                <button type="submit">Subscribe</button>
+                
+                <div class="success-message" id="successMessage">
+                    Thank you for subscribing to our text notifications! You will now receive updates about events and announcements from Congregation Minchas Yehuda.
+                </div>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 1266 50th Street, Brooklyn, NY 11215</p>
+            <p><strong>Phone:</strong> (347) 546-1742</p>
+            <p><strong>Email:</strong> cmyshul@gmail.com</p>
+            <p>Please feel free to reach out with any questions, concerns, or to learn more about our congregation and its activities.</p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Congregation Minchas Yehuda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('textSignupForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // In a real implementation, you would send the form data to your server
+            // For demonstration purposes, we'll just show the success message
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+            
+            // Scroll to the success message
+            document.getElementById('successMessage').scrollIntoView({behavior: 'smooth'});
+        });
+    </script>
+</body>
+</html>
